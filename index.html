@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FCC | Project #2</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">PROJECT #2 | A SURVEY FORM</h1>
+        <p id="description"><em>Learning Responsive Web Design at freeCodeCamp.</em></p>
+    </header>
+    <main>
+        <div class="flex-container">
+            <form action="" id="survey-form">
+
+                <div class="child-label">
+                    <label for="name" id="name-label">Name</label><br>
+                </div>
+                <div class="block">
+                    <input type="text" class="block" id="name" placeholder="Enter full name" required><br>
+                </div>
+                <div class="child-label">
+                    <label for="email" id="email-label">E-mail</label><br>
+                </div>
+                <div class="block">
+                    <input type="email" class="block" id="email" placeholder="Enter e-mail address" required><br>
+                </div>
+                <div class="child-label">
+                    <label for="number" id="number-label">Age</label><br>
+                </div>
+                <div class="block">
+                    <input type="number" class="block" id="number" min="1" max="99" placeholder="Age"><br>
+                </div>
+                <div class="child-label" id="gender">
+                    <p>Gender</p>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br>
+                    <input type="radio" id="notsay" name="gender" value="notsay">
+                    <label for="notsay">Prefer not to say</label><br>
+                </div>
+                <div class="child-label">
+                    <br><label for="dropdown" id="dropdown-label">Marital status</label><br>
+                </div>
+                <div class="block">
+                    <select name="status" class="block" id="dropdown">
+                        <option value="Select one">Select one...</option>
+                        <option value="Married">Married</option>
+                        <option value="Single">Single</option>
+                        <option value="Widowed">Widowed</option>
+                        <option value="Other union">Other union</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="child-label" id="workstudy">
+                    <p>Current work/study situation</p>
+                    <input type="checkbox" id="student" name="situation" value="student">
+                    <label for="student">Student</label><br>
+                    <input type="checkbox" id="employed" name="situation" value="employed">
+                    <label for="employed">Employed by others</label><br>
+                    <input type="checkbox" id="self-employed" name="situation" value="self-employed">
+                    <label for="self-employed">Self-employed</label><br>
+                    <input type="checkbox" id="entrepreneur" name="situation" value="entrepreneur">
+                    <label for="entrepreneur">Entrepreneur</label><br>
+                    <input type="checkbox" id="unemployed" name="situation" value="unemployed">
+                    <label for="unemployed">Unemployed</label><br>
+                    <input type="checkbox" id="retired" name="situation" value="retired">
+                    <label for="retired">Retired</label><br>
+                </div>
+                <div class="child-label">
+                    <p>What's your favorite thing about your life right now?</p>
+                </div>
+                <div class="block">
+                    <textarea name="comments" class="block" id="comments"></textarea><br>
+                </div>
+                <div class="child-label">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>harri made this.</p>
+    </footer>
+</body>
+</html>
